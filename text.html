@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Up Animation</title>
+
+    <style>
+      .intro-line-parent {
+        overflow: hidden;
+      }
+      .line {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+  
+   
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="intro">
+        <div class="intro-line-parent"><div class="line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div></div>
+        <div class="intro-line-parent"><div class="line">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div></div>
+        <div class="intro-line-parent"><div class="line">when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></div>
+      </h1>
+    </div>
+
+    <script>
+      gsap.to(".line", {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power4.out",
+        stagger: 0.1
+      });
+    </script>
+  </body>
+</html>

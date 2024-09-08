@@ -1,0 +1,129 @@
+.form-title{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+.links h2{
+    color: #FFF;
+font-size: 20px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.links{
+    padding: 20px 0;
+}
+.links .btn{
+    color: #B0B0B0;
+    text-decoration: underline;
+}
+.form-linkedin .main-btn{
+    padding: 10px 74px;
+}
+.form-mail .main-btn{
+    padding: 10px 118px;
+}
+.form{
+    display: grid;
+    grid-template-columns: 2fr 1.4fr;
+    gap: 120px;
+}
+form label{
+    color: #FFF;
+font-size: 20px;
+font-weight: 500;
+font-family: myfont;
+}
+.form-mail{
+    margin-bottom: 54px;
+}
+input,textarea{
+    width: 100%;
+    padding: 12px 12px 20px 0;
+    background: transparent;
+    border: none;
+    color: #fff;
+    resize: none;
+}
+.padding{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #454545;
+    background: transparent;
+    margin-bottom: 40px;
+}
+input:focus {
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.form-btn{
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+}
+.form-btn .btn{
+    border-radius: 64px;
+    background: #1E5EFF;
+    padding: 16px 32px; 
+}
+.form-btn .main-btn{
+    padding: 8px 20px;
+}
+
+@media only screen and (max-width: 1024px){
+    .form{
+        gap: 80px;
+    }
+    .form-title{
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 989px){
+    .form{
+        gap: 60px;
+    } 
+    .form-title{
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .form{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .form-btn{
+        justify-content: start;
+    }
+    .form-title{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    input, textarea{
+        padding: 10px 10px 12px 0;
+    }
+    .form input .para{
+        font: 16px;
+    }
+    .form-btn .btn{
+        padding: 10px 20px;
+    }
+    form label{
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 530px){
+    .form-title{
+        font-size: 22px;
+    }
+    .form-linkedin .main-btn {
+        padding: 10px 68px;
+    }
+    .form-mail .main-btn {
+        padding: 10px 105px;
+    }
+}

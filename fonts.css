@@ -1,0 +1,41 @@
+@font-face {
+    font-family: myfont;
+    src: url(./fonts/ClashDisplay_Complete/Fonts/TTF/ClashDisplay-Variable.ttf);
+}
+@font-face {
+    font-family: myfont2;
+    src: url(./fonts/Rakkas/Rakkas-Regular.ttf);
+}
+@font-face {
+    font-family: League;
+    src: url(./fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: popins;
+    src: url(./fonts/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: DM-sans;
+    src: url(./fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+.Poppins {
+    font-family: popins;
+  }
+  .Rakkas {
+    font-family: myfont;
+  }
+  .League {
+    font-family: League;
+  }
+  .montserrat{
+    font-family: Montserrat;
+  }
+  .DM-Sans{
+    font-family: DM-sans;
+
+  }

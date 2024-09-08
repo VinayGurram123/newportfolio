@@ -1,0 +1,209 @@
+
+  
+  .content-title .title{
+    font-size: 66px;
+  }
+  .para span {
+    color: #fff;
+  }
+  
+  .title span {
+    color: #888888;
+  }
+  
+  .content-main {
+    display: flex;
+    gap: 80px;
+    align-items: end;
+  }
+  
+  .content-title {
+    width: 75%;
+  }
+  
+  .content-text {
+    width: 25%;
+  }
+  
+  .gallary-photos {
+    margin-top: 54px;
+  }
+  
+  .hover {
+    display: grid;
+    gap: 32px;
+    margin-top: 32px;
+    overflow: hidden;
+  }
+ .hover-text{
+    max-width: 85%;
+  } 
+  .hover .img {
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Adjusted to ensure smooth scaling */
+    border-radius: 32px;
+    position: relative;
+  }
+  
+  .hover .img .photo {
+    transition: transform 0.5s ease; /* Ensure the transition is applied directly to the img */
+  }
+  
+  .hover .img:hover .photo {
+    transform: scale(1.1);
+  }
+  
+  .first-row {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .second-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .third-row {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .fourth-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hover-btn{
+    backdrop-filter: blur(15px);
+    width: 90%;
+    bottom: 70px;
+    border-radius: 120px;
+    padding: 14px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 50%;
+    transform: translate(50%, 50%);
+    opacity: 0;
+    transition: 0.5s all;
+  }
+  .img:hover .hover-btn{
+    opacity: 1;
+    transition: 0.5s all;
+  }
+  .hover-btn img{
+    height: 69px;
+    width: 69px;
+  }
+  .hover-btn h3{
+color: #FFF;
+font-family: myfont;
+font-size: 20px;
+font-weight: 500;
+}
+.hover-btn h4{
+color: #B0B0B0;
+font-family: myfont;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.6;
+}
+
+
+
+
+
+
+  @media only screen and (max-width: 1024px) {
+    .content-title{
+        width: 55%;
+    }
+    .content-text {
+        width: 45%;
+    }
+    .content-title .title,h1{
+        font-size: 44px;
+        line-height: 1.1;
+    }
+  }
+  @media only screen and (max-width: 889px) {
+    .content-main{
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-title,.content-text{
+        width: 100%;
+    }
+    .title,.para{
+        text-align: start;
+    }
+    
+    .footer-main{
+        gap: 60px;
+        padding: 0 20px;
+    }
+    .footer-top{
+      padding-top: 30px;
+    }
+    .btn-text{
+      flex-direction: column;
+    }
+    
+}
+  
+
+  @media only screen and (max-width: 749px) {
+    .gallary-main .hover {
+      grid-template-columns: 1fr;
+    }
+    .hover .img .photo{
+      width: 100%;
+    }
+    .hover-btn{
+        opacity: 1;
+        width: 95%;
+        bottom: 35px;
+        padding: 8px;
+    }
+    .hover-btn img{
+      height: 40px;
+      width: 40px;
+    }
+    .hover-btn h3{
+      font-size: 14px;
+    }
+    .hover-btn h4{
+      font-size: 12px;
+    }
+    
+    
+    .content-title .title,h1 {
+        font-size: 32px;
+    }
+    .copy-rights{
+        padding: 20px 12px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+  
+  .hover .img{
+    border-radius: 16px;
+  }
+  .hover{
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .gallary-photos{
+    margin-top: 32px;
+  }
+
+  }
+
+
+  @media only screen and (max-width: 530px) {
+
+  
+  .content-title .title, h1{
+    font-size: 24px;
+  }
+
+}

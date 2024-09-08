@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./about.css" />
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+    <link rel="stylesheet" href="./fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="about-title">
+        <div class="about-title-main mt container">
+          <h2 class="title">
+            <img src="./images/about/Ellipse 1.png" alt="" />
+            <span>Hello, I'm</span> Saikiran Chilkamari UX/UI & Product Designer
+          </h2>
+        </div>
+      </section>
+      <!-- Additional content... -->
+      <footer id="footer" class="container mt">
+        <div class="footer-main">
+          <div class="footer-top">
+            <div class="footer-title">
+              <h1>
+                I am
+                <span>
+                  &nbsp; Glad <br />
+                  to Get In Touch
+                </span>
+              </h1>
+              <div class="photo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="155" height="72" viewBox="0 0 155 72" fill="none">
+                  <!-- SVG path... -->
+                </svg>
+              </div>
+            </div>
+            <div class="footer-btn">
+              <a href="#">
+                <button class="custom-btn line">
+                  <span class="line">Send a Mail</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-nav">
+              <ul>
+                <li><a href="#" class="line">Home</a></li>
+                <li><a href="#" class="line">About</a></li>
+                <li><a href="#" class="line">Experience</a></li>
+                <li><a href="#" class="line">Works</a></li>
+                <li><a href="#" class="line">Contact</a></li>
+              </ul>
+            </div>
+            <div class="social-nav">
+              <ul>
+                <li><a href="#" class="line">In</a></li>
+                <li><a href="#" class="line">Dr</a></li>
+                <li><a href="#" class="line">Tw</a></li>
+                <li><a href="#" class="line">Be</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.utils.toArray(".line").forEach((line) => {
+        gsap.from(line, {
+          scrollTrigger: {
+            trigger: line,
+            start: "top 90%",
+            toggleActions: "play none none reset",
+          },
+          opacity: 0,
+          y: 100,
+          duration: 1,
+          ease: "power4.out",
+        });
+      });
+    </script>
+  </body>
+</html>
