@@ -360,6 +360,10 @@ display: inline-flex;
 gap: 12px;
 margin: 10px 0;
   }
+.responsive-nav .alag-links div a img{
+  width: 18px;
+  height: 17.217px;
+}
 @media only screen and (max-width: 1024px) {
 
   .title{
