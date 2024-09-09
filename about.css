@@ -69,6 +69,94 @@
 
 
 
+.text-with-imgs-slider .slider-wrapper{
+    background-color: #fff;
+    transform: rotate(-4deg);
+  
+  }
+  .text-with-imgs-slider{
+    overflow: hidden;
+    padding: 60px 0 30px 0;
+  }
+  .slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid  #D1D1D1;
+    border-bottom: 1px solid  #D1D1D1;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    display: flex;
+    white-space: nowrap;
+    animation: slide 10s linear infinite;
+}
+.slider2{
+  animation: slide2 10s linear infinite;
+}
+.slider2 div{
+  display: flex;
+}
+.slider span span{
+    color: #fff;
+}
+.text-with-imgs-slider .slider span span{
+  color: #0B0B0B;
+}
+.slider2 div {
+  display: flex;
+  align-items: center; /* Aligns image and text vertically */
+  padding: 20px 40px; /* Adds space between the slider items */
+  border: 1px solid #B0B0B0;
+  border-radius: 64px;
+  margin: 0 20px;
+}
+
+.slider2 img {
+  margin-right: 15px; /* Adds space between the image and text */
+}
+.slider2 div span{
+  font-size: 32px;
+  color: #fff;
+}
+.slider span {
+    display: inline-block;
+    color: #808080;
+    font-family: myfont;
+    font-size: 46px;
+    font-weight: 500;    
+    padding-right: 20px;
+}
+
+.text-with-imgs-slider .slider-wrapper-2{
+  border: none;
+  background: transparent;
+  padding: 0;
+  transform: rotate(2deg);
+  position: relative;
+  z-index: -1;
+  margin-top: 20px;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slide2 {
+  from {
+      transform: translateX(-50%);
+  }
+  to {
+      transform: translateX(0%);
+  }
+}
+
+
 
 .experience-main{
     display: flex;
@@ -91,6 +179,9 @@ ul li .list-main{
 .ex-title{
     width: 35%;
 }
+.ex-title .title{
+    margin-bottom: 8px;
+  }
 .list-main h3{
     padding-bottom: 4px;
 }
@@ -141,6 +232,26 @@ ul li .list-main{
     }
 }
 
+@media only screen and (max-width: 767px){
+
+    .slider-wrapper{
+        padding: 20px 0;
+      }
+      .slider {
+        animation: slide 3s linear infinite;
+      }
+      .slider2{
+      animation: slide2 3s linear infinite;
+      }
+      .slider2 div {
+        padding: 12px 24px;
+        margin: 0 15px;
+      }
+
+}
+
+
+
 @media only screen and (max-width: 749px){
 
     .about-title-main .title{
@@ -154,6 +265,13 @@ ul li .list-main{
     .about-banner-main.mt{
         margin-top: 40px;
     }
+    .slider-wrapper .slider span svg{
+        height: 20px;
+        width: 20px;
+      }
+      .slider span,.slider2 div span{
+        font-size: 26px;
+      }
 }
 
 @media only screen and (max-width: 570px){
@@ -180,4 +298,18 @@ ul li .list-main{
     .about-banner-main.mt{
         margin-top: 20px;
     }
+}
+
+@media only screen and (max-width: 450px){
+
+.slider-wrapper .slider span svg{
+    height: 15px;
+    width: 15px;
+  }
+  .slider span{
+    font-size: 20px;
+  }
+  .slider2 div span{
+    font-size: 16px;
+  }
 }

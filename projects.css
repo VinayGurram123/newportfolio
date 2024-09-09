@@ -124,13 +124,17 @@
   grid-template-columns: repeat(4,1fr);
   margin-top: 20px;
 }
+.box .liner span:first-child{
+    margin-right: 10px;
+}
 .box {
   width: 100%;
   height: 333px;
   display: flex;
-  align-items: end;
-  justify-content: center;
-  padding: 24px 0;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding: 24px;
   font-family: myfont;
   font-size: 20px;
   font-weight: 500;
@@ -309,7 +313,7 @@ color: #fff;
     gap: 20px;
   }
   .typography-section-main, .color-section-main{
-    padding: 20px;
+    padding: 16px;
   }
   .left, .right, .galary-bottom-img,.typography-section-main, .color-section-main{
     border-radius: 24px;
@@ -362,7 +366,18 @@ color: #fff;
 
   .color-boxes{
     grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
+  }
+  .box1{
+    border-radius: 16px 0 0 0;
+  }
+  .box2{
+    border-radius: 0 16px 0 0;
+  }
+  .box3{
+    border-radius: 0 0 0 16px;
+  }
+  .box4{
+    border-radius: 0 0 16px 0;
   }
   .banner-background{
     grid-template-columns: 1fr;
@@ -395,6 +410,7 @@ color: #fff;
   .galary-bottom-img {
     padding: 15px 15px 0 15px;
 }
+
 }
 
 @media only screen and (max-width: 530px) {
@@ -410,5 +426,15 @@ color: #fff;
     flex-direction: column;
     justify-content: end;
     align-items: center;
+  }
+  .alphabets h3{
+    font-size: 14px;
+  }
+  .box{
+    height: 166px;
+    font-size: 18px;
+    padding: 12px;
+    gap: 5px;
+    align-items: start;
   }
 }

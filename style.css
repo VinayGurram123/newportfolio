@@ -1,10 +1,17 @@
 
   
 
-
+.open-to-work{
+  gap: 11px;
+  display: flex;
+  margin-bottom: 28px;
+}
+.open-to-work .para{
+  color: #fff;
+}
 .banner-text img{
-    height: 88px;
-    width: 88px;
+    height: 64px;
+    width: 64px;
 }
   .banner-btns img{
     max-width: 100%;
@@ -412,6 +419,9 @@ ul li .list-main{
 .ex-title{
   width: 35%;
 }
+.ex-title .title{
+  margin-bottom: 8px;
+}
 .list-main h3{
   padding-bottom: 4px;
 }
@@ -436,6 +446,9 @@ ul li .list-main{
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+.case-right svg{
+  display: none;
 }
 
 
@@ -506,8 +519,14 @@ ul li .list-main{
 
 @media only screen and (max-width: 767px) {
   .banner-text img {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
+}
+.open-to-work{
+  margin-bottom: 21px;
+}
+.write-mesg{
+  margin-right: 8px;
 }
 
 .slider-wrapper{
@@ -640,7 +659,14 @@ animation: slide2 3s linear infinite;
   color: 1E5EFF;
 }
 .case-right img{
-  width: 35px;
+  display: none;
+  width: 0;
+}
+.case-right svg{
+  display: block;
+}
+.write-mesg .btn .main-btn{
+  padding: 8px 57px;
 }
 
 }

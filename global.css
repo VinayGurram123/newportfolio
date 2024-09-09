@@ -103,7 +103,7 @@ ul li {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.55;
   opacity: 0.99;
 }
 /* footer css */
@@ -442,7 +442,7 @@ margin: 10px 0;
     }
    
     .container{
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .title,h1 {
         font-size: 32px;
@@ -533,9 +533,7 @@ footer .footer-mail .main-btn {
   .mail-div{
     text-align: center;
   }
-  .footer-main{
-    gap: 20px;
-  }
+ 
   .copy-rights p, .copy-rights a{
     text-align: start;
   }
@@ -566,3 +564,9 @@ footer .footer-mail .main-btn {
   padding: 10px 50px;
 }
 }
+
+@media only screen and (max-width: 450px){
+  .mail-div a{
+    margin-top: 13px;
+  }
+} 
