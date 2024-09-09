@@ -494,9 +494,7 @@ ul li .list-main{
 .list-items{
   justify-content: space-between;
 }
-.list-title{
-  text-align: center;
-}
+
 .case-study-para .case-study{
   border-radius: 32px;
   padding: 112px 40px;
