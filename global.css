@@ -128,7 +128,7 @@ ul li {
   .footer-main {
     background-color: #454545;
     border-radius: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
     display: flex;
     flex-direction: column;
     gap: 120px;
@@ -409,15 +409,13 @@ margin: 10px 0;
     .title,.para{
         /* text-align: center; */
     }
-    .mt{
-        margin-top: 80px;
-    }
+
     .footer-main{
         gap: 60px;
         padding: 0 20px;
     }
     .footer-top{
-      padding-top: 30px;
+      padding: 32px 0 0 0;
     }
     .btn-text{
       flex-direction: column;
@@ -436,13 +434,13 @@ margin: 10px 0;
   
 
   @media only screen and (max-width: 749px) {
-
+    .mt{
+      margin-top: 72px;
+  }
     .navbar{
       padding: 15px 0;
     }
-    .mt{
-        margin-top: 40px;
-    }
+   
     .container{
         padding: 0 20px;
     }
@@ -458,8 +456,10 @@ margin: 10px 0;
         align-items: start;
         gap: 10px;
     }
-    br{
-      display: none;
+ 
+    .footer-title h1{
+      width: 100%;
+      text-align: start;
     }
     .footer-title {
       flex-direction: column;
@@ -487,9 +487,7 @@ margin: 10px 0;
     height: 60px;
     width: 60px;
   }
-  .btn{
-    font-size: 14px;
-  }
+ 
   .footer-main {
     border-radius: 16PX;
 }
@@ -516,8 +514,8 @@ footer .footer-mail .main-btn {
     .nav-list-links{
       top: 80px;
     }
-    .mt{
-      margin-top: 20px;
+    .btn{
+      font-size: 14px;
     }
   .mail-div span, .mail-div a{
     font-size: 16px;

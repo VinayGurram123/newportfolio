@@ -135,6 +135,7 @@
 }
 .slider2 div span{
   font-size: 32px;
+  color: #fff;
 }
 .slider span {
     display: inline-block;
@@ -450,7 +451,7 @@ ul li .list-main{
   }
   .case-study-para .case-study{
     border-radius: 32px;
-    padding: 100px 80px;
+    padding: 112px 80px;
   }
 }
 
@@ -498,7 +499,7 @@ ul li .list-main{
 }
 .case-study-para .case-study{
   border-radius: 32px;
-  padding: 60px 40px;
+  padding: 112px 40px;
 }
 .case-lists h3{
   font-size: 24px;
@@ -510,9 +511,7 @@ ul li .list-main{
     height: 60px;
     width: 60px;
 }
-.slider span{
-  font-size: 32px;
-}
+
 .slider-wrapper{
   padding: 20px 0;
 }
@@ -545,7 +544,7 @@ ul li .list-main{
 animation: slide2 3s linear infinite;
 }
 .slider2 div {
-  padding: 15px 30px;
+  padding: 12px 24px;
   margin: 0 15px;
 }
 #case-study{
@@ -561,10 +560,9 @@ animation: slide2 3s linear infinite;
   grid-template-columns: 1fr;
   height: unset;
   padding: 20px 0;
+  gap: 8px;
 }
-.case-right img{
-  display: none;
-}
+
 }
 
 @media only screen and (max-width: 749px) {
@@ -587,6 +585,18 @@ animation: slide2 3s linear infinite;
 .list-items ul li{
   font-size: 16px;
 }
+.case-study-para .case-study{
+  border-radius: 32px;
+  padding: 112px 26px;
+}
+.slider-wrapper .slider span svg{
+  height: 20px;
+  width: 20px;
+}
+.slider span,.slider2 div span{
+  font-size: 26px;
+}
+
 }
 
 
@@ -602,6 +612,7 @@ animation: slide2 3s linear infinite;
   .case-lists p{
     font-size: 14px;
   }
+  
 }
 @media only screen and (max-width: 450px) {
 
@@ -609,8 +620,29 @@ animation: slide2 3s linear infinite;
   flex-direction: column;
   gap: 0;
 }
-.case-study-para .case-study {
-  padding: 40px 20px;
+.slider-wrapper .slider span svg{
+  height: 15px;
+  width: 15px;
+}
+.slider span{
+  font-size: 20px;
+}
+.slider2 div span{
+  font-size: 16px;
+}
+.case-lists p{
+  max-width: 100%;
+}
+.case-right{
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.case-lists .btn{
+  color: 1E5EFF;
+}
+.case-right img{
+  width: 35px;
 }
 
 }
