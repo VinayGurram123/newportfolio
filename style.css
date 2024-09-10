@@ -114,10 +114,10 @@
 .slider {
     display: flex;
     white-space: nowrap;
-    animation: slide 10s linear infinite;
+    animation: slide 15s linear infinite;
 }
 .slider2{
-  animation: slide2 10s linear infinite;
+  animation: slide2 15s linear infinite;
 }
 .slider2 div{
   display: flex;
@@ -167,13 +167,13 @@
         transform: translateX(0%);
     }
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
 @keyframes slide2 {
   from {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
   }
   to {
       transform: translateX(0%);
@@ -220,7 +220,7 @@
     overflow: hidden;
   }
   .hover-text{
-    max-width: 85%;
+    max-width: 75%;
   }
   
   .hover .img {
@@ -255,6 +255,9 @@
     grid-template-columns: 1fr 1fr;
   }
   .hover-btn{
+
+    background: rgba(41, 41, 41, 0.10);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     width: 90%;
     bottom: 70px;
@@ -466,6 +469,9 @@ ul li .list-main{
     border-radius: 32px;
     padding: 112px 80px;
   }
+  .hover-text {
+    max-width: 65%;
+  }
 }
 
 
@@ -515,6 +521,14 @@ ul li .list-main{
 .case-lists h3{
   font-size: 24px;
 }
+.hover-btn{
+  border-radius: 60px;
+}
+.hover-btn img {
+  height: 60px;
+  width: 60px;
+}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -585,20 +599,12 @@ animation: slide2 3s linear infinite;
 @media only screen and (max-width: 749px) {
   .hover-btn {
     opacity: 1;
-    width: 95%;
-    bottom: 35px;
-    padding: 8px;
+    max-width: 90%;
+    bottom: 55px;
+    padding: 12px;
   }
-  .hover-btn h3 {
-    font-size: 14px;
-}
-.hover-btn h4 {
-  font-size: 12px;
-}
-.hover-btn img {
-  height: 40px;
-  width: 40px;
-}
+
+
 .list-items ul li{
   font-size: 16px;
 }
@@ -629,6 +635,9 @@ animation: slide2 3s linear infinite;
   .case-lists p{
     font-size: 14px;
   }
+  .hover-btn h3 {
+    font-size: 18px;
+}
   
 }
 @media only screen and (max-width: 450px) {
@@ -667,6 +676,9 @@ animation: slide2 3s linear infinite;
 }
 .write-mesg .btn .main-btn{
   padding: 8px 57px;
+}
+.hover-btn{
+  max-width: 335px;
 }
 
 }

@@ -90,10 +90,10 @@
 .slider {
     display: flex;
     white-space: nowrap;
-    animation: slide 10s linear infinite;
+    animation: slide 15s linear infinite;
 }
 .slider2{
-  animation: slide2 10s linear infinite;
+  animation: slide2 15s linear infinite;
 }
 .slider2 div{
   display: flex;
@@ -106,15 +106,15 @@
 }
 .slider2 div {
   display: flex;
-  align-items: center; /* Aligns image and text vertically */
-  padding: 20px 40px; /* Adds space between the slider items */
+  align-items: center; 
+  padding: 20px 40px; 
   border: 1px solid #B0B0B0;
   border-radius: 64px;
   margin: 0 20px;
 }
 
 .slider2 img {
-  margin-right: 15px; /* Adds space between the image and text */
+  margin-right: 15px; 
 }
 .slider2 div span{
   font-size: 32px;
@@ -143,13 +143,13 @@
         transform: translateX(0%);
     }
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
 @keyframes slide2 {
   from {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
   }
   to {
       transform: translateX(0%);
