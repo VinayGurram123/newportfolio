@@ -455,6 +455,21 @@ ul li .list-main{
 }
 
 
+.case-lists{
+  position: relative;
+}
+.case-lists .btn{
+  position: unset;
+}
+.case-lists .btn::after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 @media only screen and (max-width: 1024px) {
   .banner-text h1{
     font-size: 44px;
