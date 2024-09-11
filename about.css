@@ -272,6 +272,15 @@ ul li .list-main{
       .slider span,.slider2 div span{
         font-size: 26px;
       }
+      .about-list{
+        padding-bottom: 72px;
+        padding-left: 30px;
+      }
+      .about-title-main img{
+        margin-right: 15px;
+        height: 60px;
+        width: 60px;
+      }
 }
 
 @media only screen and (max-width: 570px){
@@ -281,7 +290,7 @@ ul li .list-main{
     }
     .ex-dates{
         width: 100%;
-        padding-left: 82px;
+        padding-left: 74px;
     }
     .img-text-ex{
         align-items: start;
@@ -311,5 +320,8 @@ ul li .list-main{
   }
   .slider2 div span{
     font-size: 16px;
+  }
+  .about-list h3{
+    font-size: 18px;
   }
 }

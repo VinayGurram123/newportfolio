@@ -46,7 +46,7 @@
     padding: 8px 76px;
   }
   .contact-btn .btn .main-btn{
-    padding: 8px 32px;
+    padding: 8px 46px;
   }
   .write-mesg{ margin-right: 25px; }
   .write-mesg a{ padding: 16px 32px;  border: 1px solid #B0B0B0; border-radius: 64px; }
@@ -54,7 +54,7 @@
   .left-btns a{ color: #fff; }
   .linkedin a{  color: #B0B0B0; padding: 10px; text-decoration: underline;}
   .linkedin{ display: flex; align-items: center;}
-  .contact-btn a{ padding: 19px 32px; background-color: #1E5EFF; border-radius: 64px; line-height: 1;}
+  .contact-btn a{ padding: 18px 29px; background-color: #1E5EFF; border-radius: 64px; line-height: 1;}
 
   /* about section css */
 
@@ -486,10 +486,10 @@ ul li .list-main{
     flex-direction: column;
   }
   .write-mesg a{
-    padding: 10px 14px;
+    padding: 14px 31px;
   }
   .contact-btn a {
-    padding: 13px 25px;
+    padding: 17px 25px;
   }
   .about-text{
     gap: 20px;
@@ -500,7 +500,7 @@ ul li .list-main{
 }
 .text-with-btn .btn{
   margin-top: 20px;
-  padding: 8px 14px;
+  padding: 15px 21px;
 }
 .project-head .btn{
   padding: 8px 14px;
@@ -627,7 +627,7 @@ animation: slide2 3s linear infinite;
 
 .ex-dates {
   width: 100%;
-  padding-left: 82px;
+  padding-left: 74px;
 }
 
 }
@@ -679,6 +679,12 @@ animation: slide2 3s linear infinite;
 }
 .hover-btn{
   max-width: 335px;
+  width: 100%;
 }
-
+#banner{
+  height: 95vh;
+  display: flex;
+  align-items: end;
+  margin: 0;
+}
 }

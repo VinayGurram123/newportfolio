@@ -123,6 +123,14 @@ line-height: 1.6;
         font-size: 44px;
         line-height: 1.1;
     }
+    .hover-btn{
+      border-radius: 60px;
+    }
+    .hover-btn img{
+      height: 60px;
+      width: 60px;
+    }
+
   }
   @media only screen and (max-width: 889px) {
     .content-main{
@@ -155,21 +163,15 @@ line-height: 1.6;
     .gallary-main .hover {
       grid-template-columns: 1fr;
     }
-    .hover-text{
-      max-width: 75%;
-    }
+
     .hover .img .photo{
       width: 100%;
     }
     .hover-btn{
         opacity: 1;
-        width: 95%;
+        width: 90%;
         bottom: 55px;
-        padding: 8px;
-    }
-    .hover-btn img{
-      height: 60px;
-      width: 60px;
+        padding: 12px 12px 12px 24px;
     }
 
     
@@ -203,8 +205,15 @@ line-height: 1.6;
     .hover-btn h3{
       font-size: 18px;
     }
-
-    
-  
 }
 
+@media only screen and (max-width: 425px) {
+
+  .hover-btn{
+    max-width: 334px;
+    width: 100%;
+  }
+  .hover-text{
+    max-width: 75%;
+  }
+}

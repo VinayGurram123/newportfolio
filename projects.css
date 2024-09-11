@@ -90,7 +90,7 @@
   font-family: myfont;
 }
 .font-name {
-  color: #888;
+  color: #E7E7E7;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -313,7 +313,7 @@ color: #fff;
     gap: 20px;
   }
   .typography-section-main, .color-section-main{
-    padding: 16px;
+    padding: 32px 16px;
   }
   .left, .right, .galary-bottom-img,.typography-section-main, .color-section-main{
     border-radius: 24px;
@@ -381,12 +381,17 @@ color: #fff;
   }
   .banner-background{
     grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 16px 16px 0 16px;
   }
   .galary{
     grid-template-columns: 1fr;
   }
   .banner-image img{
-    border-radius: 16px;
+    border-radius: 12px;
+  }
+  .banner-image .second-banner img{
+    border-radius: 12px 12px 0px 0px;
   }
   .lists ul li{
     padding: 15px 0;
@@ -394,9 +399,11 @@ color: #fff;
   }
   .alphabets h3{
     font-size: 15px;
+    margin-bottom: 4px;
   }
   .font-name{
-    font-size: 18px;
+    font-size: 14px;
+    margin-bottom: 8px;
   }
   .left, .right, .galary-bottom-img, .typography-section-main, .color-section-main{
     border-radius: 16px;
@@ -410,7 +417,24 @@ color: #fff;
   .galary-bottom-img {
     padding: 15px 15px 0 15px;
 }
-
+.font{
+  font-size: 18px;
+}
+.primary-font {
+  margin-top: 20px;
+}
+.right img{
+  border-radius: 8px;
+}
+.right{
+  gap: 12px;
+}
+.banner-image.mt{
+  margin-top: 32px;
+}
+.project-details.mt{
+  margin-top: 32px;
+}
 }
 
 @media only screen and (max-width: 530px) {
@@ -420,7 +444,7 @@ color: #fff;
   }
   .list-text{
     width: 70%;
-    font-size: 15px;
+    font-size: 14px;
   }
   .box{
     flex-direction: column;

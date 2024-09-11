@@ -1,5 +1,6 @@
 .case-title-text{
     max-width: 1130px;
+    margin-top: 19px;
 }
 .case-banner img{
     width: 100%;
@@ -40,14 +41,9 @@
 }
 
 .challenges-img{
-    border-radius: 40px;
-    background:#282828;
-    padding: 80px 70px;
-}
-.challenges-img-2{
-    background: #F6F6F6;
     border-radius: 16px;
 }
+
 .research-imgs{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -66,7 +62,7 @@
     display: inline;
     color:  #FFF;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .finding-pad .para{
     display: inline;
@@ -76,8 +72,6 @@
 }
 .use-flow-img{
     border-radius: 16px;
-    background:#F6F6F6;
-    padding: 54px 48px;
     margin-top: 54px;
 }
 
@@ -177,7 +171,7 @@
 .theory-box h3{
     color: #FFF;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .conclusion-main{
@@ -299,9 +293,7 @@ font-weight: 700;
     .typography-section-main, .color-section-main{
         padding: 32px;
     }
-    .challenges-img-2,.use-flow-img{
-        padding: 30px;
-    }
+   
 }
 
 @media only screen and (max-width: 989px){
@@ -327,7 +319,7 @@ font-weight: 700;
 
 @media only screen and (max-width: 767px){
     .case-banner img{
-        border-radius: 16px;
+        border-radius: 10px;
     }
     .grid-main{
         grid-template-columns: 1fr;
@@ -338,10 +330,12 @@ font-weight: 700;
 
     }
     .pro-title, .research-text-img, .finding-pad, .project-details, .problem-statement{
-        padding: 15px;
+        padding: 32px 16px;
         border-radius: 16px;
     }
-  
+    .grid-main{
+        gap: 32px;
+    }
 
     .wireframing-grid, .design-grid{
         grid-template-columns: 1fr 1fr;
@@ -353,7 +347,6 @@ font-weight: 700;
     }
     .use-flow-text, .wireframing-text, .design-text,.conclusion-main{
         grid-template-columns: 1fr;
-        text-align: center;
     }
 
     .card{
@@ -396,12 +389,42 @@ font-weight: 700;
     .wireframing-grid-2, .design-grid-2{
         grid-template-columns: 1fr 1fr;
     }
-    .challenges-img, .use-flow-img{
-        height: 80vh;
-        overflow: scroll;
+  
+   
+    .case-title-text h1{
+        font-size: 32px;
+        margin-top: 12px;
     }
-    .challenges-img img, .use-flow-img img{
+    .case-banner.mt{
+        margin-top: 32px;
+    }
+
+    .challenges-img img,.use-flow-img img{
+        height: 90vh;
         max-width: 1400px;
-        height: 1000px;
     }
+    .challenges-img,.use-flow-img {
+        overflow: auto;
+        position: relative;
+        box-sizing: border-box;
+        padding-bottom: 23px;
+    } 
 }
+/* Total width */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Background of the scrollbar */
+::-webkit-scrollbar-track {
+    background: #888; 
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #fff; 
+}
+
