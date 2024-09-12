@@ -35,9 +35,7 @@
     margin-top: 32px;
     overflow: hidden;
   }
- .hover-text{
-    max-width: 65%;
-  } 
+ 
   .hover .img {
     overflow: hidden;
     transition: transform 0.5s ease; /* Adjusted to ensure smooth scaling */
@@ -111,6 +109,24 @@ line-height: 1.6;
 
 
 
+.projects-section .img{
+  position: relative;
+}
+.hover-project{
+  text-decoration: none;
+  width: 65%;
+}
+.hover-project::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
 
   @media only screen and (max-width: 1024px) {
     .content-title{
@@ -197,6 +213,10 @@ line-height: 1.6;
     margin-top: 32px;
   }
 
+  .hover-btn img{
+    height: 48px;
+    width: 48px;
+  }
   }
 
 
@@ -214,6 +234,6 @@ line-height: 1.6;
     width: 100%;
   }
   .hover-text{
-    max-width: 75%;
+    max-width: 100%;
   }
 }
