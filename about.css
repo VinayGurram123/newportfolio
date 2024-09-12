@@ -284,6 +284,7 @@ ul li .list-main{
   align-items: center;
   font-size: 32px;
   color: #fff;
+  font-family: myfont;
   }
   
   .marquee-item a {
