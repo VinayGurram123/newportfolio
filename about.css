@@ -258,10 +258,10 @@ ul li .list-main{
   align-items: center;
   flex-shrink: 0;
   will-change: transform;
-  animation: marquee-left 80s linear infinite;
+  animation: marquee-left 30s linear infinite;
   }
   .marquee-row-2{
-  animation: marquee-right 60s linear infinite;
+  animation: marquee-right 30s linear infinite;
   }
  
   

@@ -234,19 +234,24 @@ align-items: center;
 max-width: none;
 overflow: hidden;
 }
-
+.marquee-slider-inner .marquee-item .slide-text-color{
+  color: #B0B0B0;
+}
+.marquee-slider-inner .slide-text-color-2{
+  color: #888;
+}
 .marquee-row {
 display: flex;
 align-items: center;
 flex-shrink: 0;
 will-change: transform;
-animation: marquee-left 80s linear infinite;
+animation: marquee-left 30s linear infinite;
 }
 .marquee-row-2{
-animation: marquee-right 60s linear infinite;
+animation: marquee-right 30s linear infinite;
 }
 .marquee-row-0{
-animation: text-right 60s linear infinite;
+animation: text-right 30s linear infinite;
 
 }
 
