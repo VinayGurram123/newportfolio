@@ -252,6 +252,9 @@ ul li .list-main{
   max-width: none;
   overflow: hidden;
   }
+  .marquee-slider-inner .slide-text-color-2{
+    color: #888;
+  }
   
   .marquee-row {
   display: flex;
