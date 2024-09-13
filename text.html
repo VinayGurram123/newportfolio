@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slide Up Animation</title>
+    <title>Slide Up Animation on Scroll</title>
 
     <style>
       .intro-line-parent {
@@ -13,27 +13,58 @@
         opacity: 0;
         transform: translateY(100%);
       }
-  
-   
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </head>
   <body>
-    <div class="container">
+    <section class="container">
       <h1 id="intro">
         <div class="intro-line-parent"><div class="line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div></div>
         <div class="intro-line-parent"><div class="line">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div></div>
         <div class="intro-line-parent"><div class="line">when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></div>
       </h1>
-    </div>
+    </section>
+
+    <section class="container">
+      <h1 id="intro">
+        <div class="intro-line-parent"><div class="line">Another section with similar animation on scroll.</div></div>
+        <div class="intro-line-parent"><div class="line">This text will animate when you scroll to this section.</div></div>
+        <div class="intro-line-parent"><div class="line">IntersectionObserver makes it possible!</div></div>
+      </h1>
+    </section>
 
     <script>
-      gsap.to(".line", {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power4.out",
-        stagger: 0.1
+      // Function to animate lines on scroll
+      function animateLines(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            gsap.to(entry.target.querySelectorAll('.line'), {
+              y: 0,
+              opacity: 1,
+              duration: 1,
+              ease: "power4.out",
+              stagger: 0.1
+            });
+            observer.unobserve(entry.target); // Stop observing once animation is done
+          }
+        });
+      }
+
+      // Create an IntersectionObserver
+      const observer = new IntersectionObserver(animateLines, {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+      });
+
+      // Observe each section
+      document.querySelectorAll('.container').forEach((section) => {
+        observer.observe(section);
       });
     </script>
   </body>

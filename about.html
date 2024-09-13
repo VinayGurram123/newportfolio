@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="./about.css" />
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./fonts.css" />
-
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  
+<style>
+        .intro-line-parent {
+        overflow: hidden;
+      }
+      .line {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+</style>
 
   </head>
   <body>
@@ -109,21 +118,23 @@
             <img src="./images/about/about-banner.png" alt="" />
           </div>
           <div class="banner-text">
-            <p class="para">
+            <div class="intro-line-parent">
+              <p class="para line">
               I’m passionate about creating designs that make a difference. My
               journey into the world of design began not just as a career choice
               but as a way to express myself and connect with others. Over the
               years, I’ve come to realize that design isn’t just about how
               things look it’s about how they work, how they feel, and most
               importantly, how they impact people’s lives.
-            </p>
-            <p class="para">
+            </p></div>
+            <div class="intro-line-parent">
+              <p class="para line">
               As dedicated UX/UI and Product Designer with a passion for
               transforming complex problems into intuitive and engaging digital
               experiences. My design journey spans several years, evolving from
               capturing moments through photography to creating dynamic user
               interfaces and innovative product solutions.
-            </p>
+            </p></div>
           </div>
         </div>
       </section>
@@ -132,7 +143,8 @@
         <div class="about-lists-main mt container">
           <div class="about-list">
             <h3>The Beginning of MY Career</h3>
-            <p class="para">
+            <div class="intro-line-parent">
+            <p class="para line">
               started with a camera in hand, capturing moments and stories
               through the lens. As a Photographer & Editor, I learned the art of
               storytelling and developed a keen eye for detail. It was in these
@@ -140,19 +152,25 @@
               can convey emotions, tell stories, and even change perspectives.
             </p>
           </div>
+          </div>
           <div class="about-list">
             <h3>Finding My Path as Graphic Designer</h3>
-            <p class="para">
+            <div class="intro-line-parent">
+
+            <p class="para line">
               I found a new way to channel my creativity. I loved the challenge
               of turning ideas into visuals that could communicate a message or
               build a brand’s identity. This phase of my journey taught me the
               importance of creativity with purpose, where every design decision
               has a reason and contributes to a larger goal.
             </p>
+            </div>
           </div>
-          <div class="about-list">
+          <div class="about-list ">
             <h3>Evolving into UX/UI Design</h3>
-            <p class="para">
+            <div class="intro-line-parent">
+
+            <p class="para line">
               My curiosity led me to the world of UX/UI design, where I could
               blend my love for visuals with a deep understanding of user needs.
               It wasn’t just about making things look good it was about making
@@ -160,10 +178,12 @@
               natural. I dove headfirst into this field, learning everything I
               could about user-centered design, wireframing, and prototyping.
             </p>
+            </div>
           </div>
-          <div class="about-list">
+          <div class="about-list ">
             <h3>Leading with Passion</h3>
-            <p class="para">
+            <div class="intro-line-parent">
+              <p class="para line">
               As a UX/UI & Product Designer, I’ve had the privilege of leading
               design teams and contributing to over 50+ projects. Each project
               has been a unique journey, with its own set of challenges and
@@ -172,10 +192,12 @@
               and to work with amazing people who share my passion for making a
               difference.
             </p>
+            </div>
           </div>
-          <div class="about-list">
+          <div class="about-list ">
             <h3>Beyond the Screen</h3>
-            <p class="para">
+            <div class="intro-line-parent">
+              <p class="para line">
               You’ll find me expanding my horizons in various ways. I’m always
               eager to learn new skills, whether it’s diving into the latest
               design tools or exploring entirely new fields. I also enjoy
@@ -187,6 +209,7 @@
               And when I want to lose myself in another world, I turn to books,
               which offer endless possibilities for learning and imagination.
             </p>
+            </div>
           </div>
         </div>
       </section>
@@ -495,11 +518,13 @@
         <div class="experience-main mt container">
           <div class="ex-title intro-line-parent">
             <h2 class="title">My <span> Experience </span></h2>
-            <p class="para line">
+            <div class="intro-line-parent">
+              <p class="para line">
               Throughout my career, I have had the opportunity to immerse myself
               in various facets of design,My skills and expanding my expertise.
               Here’s a look at my professional Experience
             </p>
+            </div>
           </div>
           <div class="ex-lists">
             <ul>
@@ -669,5 +694,32 @@
 
     <script src="./script.js"></script>
 
+    <script>
+      // Function to animate lines on scroll
+      function animateLines(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            gsap.to(entry.target.querySelectorAll('.line'), {
+              y: 0,
+              opacity: 1,
+              duration: 1,
+              ease: "power4.out",
+              stagger: 0.1
+            });
+            observer.unobserve(entry.target); // Stop observing once animation is done
+          }
+        });
+      }
+
+      // Create an IntersectionObserver
+      const observer = new IntersectionObserver(animateLines, {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+      });
+
+      // Observe each section
+      document.querySelectorAll('.container').forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
   </body>
 </html>
