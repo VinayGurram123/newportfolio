@@ -20,7 +20,7 @@
 .case-title h2{
     color:#FFF;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 10px;
 
 }
@@ -36,7 +36,7 @@
     text-align: center;
     color:#FFF;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 54px;
 }
 
@@ -56,7 +56,7 @@
 .finding-pad h2{
     color:#FFF;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
 }
 .finding-pad h3{
     display: inline;
@@ -197,7 +197,7 @@
     text-align: center;
     color: #FFF;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 54px;
 }
 .targets-main-section{
@@ -255,6 +255,9 @@ font-size: 40px;
 font-weight: 700;
 }
 
+.challenges-img img, .use-flow-img img{
+    border-radius: 16px;
+}
 
 @media only screen and (max-width: 1080px){
     .target-cards{
@@ -363,7 +366,12 @@ font-weight: 700;
     .card-text h3{
         font-size: 18px;
     }
-
+    .target-title,.challenges-title{
+        text-align: start;
+    }
+    .many-more{
+        margin-top: 32px;
+    }
     
 }
 

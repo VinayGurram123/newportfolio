@@ -12,6 +12,7 @@
 .banner-text img{
     height: 64px;
     width: 64px;
+    margin: 0 14px;
 }
   .banner-btns img{
     max-width: 100%;
@@ -259,6 +260,7 @@ animation: text-right 30s linear infinite;
   border: none;
   margin: 0;
   gap: 37px;
+  padding: 27px;
 }
 
 .marquee-item {
@@ -400,7 +402,7 @@ transform: translateX(0%);
     width: 90%;
     bottom: 70px;
     border-radius: 120px;
-    padding: 14px;
+    padding: 14px 14px 14px 24px;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -472,6 +474,7 @@ line-height: 20px;
 .case-study h2{
     text-align: center;
     color: #888;
+    max-width: 976px;
 }
 .case-study .case-white{
 color: #FFF;
@@ -669,7 +672,7 @@ ul li .list-main{
     width: 100%;
 }
 .text-with-btn .btn{
-  margin-top: 20px;
+  margin-top: 32px;
   padding: 15px 21px;
 }
 .project-head .btn{
@@ -809,7 +812,9 @@ animation: slide2 3s linear infinite;
 .marquee-slider{
   padding: 20px 0 0;
 }
-
+.about-text{
+  gap: 8px;
+}
 }
 
 
@@ -857,10 +862,11 @@ animation: slide2 3s linear infinite;
 .case-lists .btn{
   color: 1E5EFF;
 }
-.case-right img{
-  display: none;
-  width: 0;
-}
+ .case-right img{
+  display: block;
+  width: 25px;
+  height: 25px;
+} 
 .case-right svg{
   display: block;
 }
@@ -889,6 +895,10 @@ animation: slide2 3s linear infinite;
   .marquee-row-2 .marquee-item{
     gap: 20px;
     padding: 12px 10px;
+  }
+  .marquee-row-2 .marquee-item svg{
+    height: 15px;
+    width: 15px;
   }
   .marquee-row-2 span{
     font-size: 16px;

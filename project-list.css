@@ -73,7 +73,7 @@
     width: 90%;
     bottom: 70px;
     border-radius: 120px;
-    padding: 14px;
+    padding: 14px 14px 14px 24px;
     position: absolute;
     display: flex;
     justify-content: space-between;
