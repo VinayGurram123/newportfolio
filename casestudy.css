@@ -257,6 +257,7 @@ font-weight: 700;
 
 .challenges-img img, .use-flow-img img{
     border-radius: 16px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1080px){
