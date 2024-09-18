@@ -42,6 +42,9 @@
     border-radius: 32px;
     position: relative;
   }
+  .img img{
+    width: 100%;
+  }
   
   .hover .img .photo {
     transition: transform 0.5s ease; /* Ensure the transition is applied directly to the img */
