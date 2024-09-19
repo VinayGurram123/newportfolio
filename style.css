@@ -475,6 +475,7 @@ line-height: 20px;
     text-align: center;
     color: #888;
     max-width: 976px;
+    margin: 0 auto;
 }
 .case-study .case-white{
 color: #FFF;
